@@ -132,11 +132,12 @@ class GridHelper
             print "\n";
         }
 
+        // add some time delay
         usleep(5000);
 
-        echo "\r";
-        echo "\033[K";
-        echo "\033[0;0H";
+        echo "\r"; // return to beginning of line
+        echo "\033[K"; // erase the end of the line
+        echo "\033[0;0H"; // move to 0,0 position of terminal
     }
 
     /**

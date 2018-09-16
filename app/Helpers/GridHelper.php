@@ -77,22 +77,6 @@ class GridHelper
     }
 
     /**
-     * Function finds live cells
-     *
-     * @return int
-     */
-    public function getLiveCellsCount()
-    {
-        $count = 0;
-        foreach ($this->cells as $y => $rows) {
-            foreach ($rows as $x => $cell) {
-                if($cell) $count++;
-            }
-        }
-        return $count;
-    }
-
-    /**
      * Setting templates and marking live cells
      *
      * @return $this

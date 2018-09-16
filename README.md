@@ -12,7 +12,7 @@ git clone https://github.com/phpcodebooster/gameoflife.git
 cd gameoflife
 composer install
 
-# run this game command line
+# run this game command line in your terminal
 php artisan game:start
 ```
 
